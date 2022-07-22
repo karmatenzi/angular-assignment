@@ -1,0 +1,34 @@
+<mat-toolbar >
+  <mat-toolbar-row>
+     <span color="#FEFEFE"> Dashboard</span>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxLayoutGap="4px">
+      <div fxFlexfxLayout="row"  fxLayoutAlign="start center" fxLayoutGap="2px">
+        <div class="col-sm-4">
+          <input type="text" value="" placeholder="Search..." class="form-control" />
+        </div>
+        <button mat-icon-button  mat-raised-button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+      <div>
+        <ul fxLayout="row" fxLayoutGap="24px">
+          <li>
+            <button mat-icon-button>
+              <mat-icon>dashboard</mat-icon>
+            </button>
+          </li>
+          <li>
+            <mat-icon matBadge="5" matBadgeColor="warn">notifications</mat-icon>
+            <!-- Include text description of the icon's meaning for screen-readers -->
+            <span class="cdk-visually-hidden"></span>
+          </li>
+          <li>
+            <button mat-icon-button>
+              <mat-icon>person</mat-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
