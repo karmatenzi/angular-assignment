@@ -11,6 +11,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatBadgeModule} from "@angular/material/badge";
 import {FlexModule} from "@angular/flex-layout";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 
 
@@ -25,16 +26,17 @@ import {FlexModule} from "@angular/flex-layout";
     HeaderComponent,
     SidebarComponent
   ],
-    imports: [
-        CommonModule,
-        MatDividerModule,
-        MatIconModule,
-        MatListModule,
-        RouterModule,
-        MatToolbarModule,
-        MatButtonModule,
-        MatBadgeModule,
-        FlexModule,
-    ]
+  imports: [
+    CommonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatListModule,
+    RouterModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatBadgeModule,
+    FlexModule,
+    MatButtonToggleModule,
+  ]
 })
 export class SharedModule { }

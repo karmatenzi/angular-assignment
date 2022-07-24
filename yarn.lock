@@ -179,7 +179,7 @@
     "uuid" "8.3.2"
     "yargs" "17.4.1"
 
-"@angular/common@^14.0.0", "@angular/common@^14.0.0 || ^15.0.0", "@angular/common@14.1.0":
+"@angular/common@^14.0.0", "@angular/common@^14.0.0 || ^15.0.0", "@angular/common@>=9.0.0", "@angular/common@14.1.0":
   "integrity" "sha512-leethDtLbA3qySaOEBUto602DF0qH1maK9u2zHncrUFOpnHAYUEd7N9MFMdIYASurTnwOSglEoIDCML94qzImQ=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-14.1.0.tgz"
   "version" "14.1.0"
@@ -209,7 +209,7 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@^14.0.0", "@angular/core@^14.0.0 || ^15.0.0", "@angular/core@14.1.0":
+"@angular/core@^14.0.0", "@angular/core@^14.0.0 || ^15.0.0", "@angular/core@>=9.0.0", "@angular/core@14.1.0":
   "integrity" "sha512-3quEsHmQifJOQ2oij5K+cjGjmhsKsyZI1+OTHWNZ6IXeuYviZv4U/Cui9fUJ1RN3CZxH3NzWB3gB/5qYFQfOgg=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-14.1.0.tgz"
   "version" "14.1.0"
@@ -3380,7 +3380,14 @@
   "resolved" "https://registry.npmjs.org/hdr-histogram-percentiles-obj/-/hdr-histogram-percentiles-obj-3.0.0.tgz"
   "version" "3.0.0"
 
-"highcharts@^10.2.0":
+"highcharts-angular@^3.0.0":
+  "integrity" "sha512-v2jMlvmzmLqqKVQdsARBewmYaQOL44lmioF9WEseuIF2KyTeZIeUtYbrEqG9uz+/dl0bsDZL6WtUrgCa42D3DQ=="
+  "resolved" "https://registry.npmjs.org/highcharts-angular/-/highcharts-angular-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "tslib" "^2.0.0"
+
+"highcharts@^10.2.0", "highcharts@>=6.0.0":
   "integrity" "sha512-MvLo4dzR2Vo7Y85dsqJ07uabBXSSIRKRRdW4l9IGP55h2jYWNm/m9JBszVVxySH5Lda6g+Ins9NdGppZJpjNCA=="
   "resolved" "https://registry.npmjs.org/highcharts/-/highcharts-10.2.0.tgz"
   "version" "10.2.0"
@@ -6046,7 +6053,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.1.0", "tslib@^2.3.0", "tslib@2.4.0":
+"tslib@^2.0.0", "tslib@^2.1.0", "tslib@^2.3.0", "tslib@2.4.0":
   "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   "version" "2.4.0"

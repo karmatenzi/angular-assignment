@@ -11,6 +11,11 @@ import {MatDividerModule} from "@angular/material/divider";
 import {FlexModule} from "@angular/flex-layout";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatTableModule} from "@angular/material/table";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { GraphIconComponent } from './graphs/graph-icon/graph-icon.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 
 
@@ -19,7 +24,9 @@ import {MatIconModule} from "@angular/material/icon";
     DashboardComponent,
     CardsComponent,
     GraphsComponent,
-    TablesComponent
+    TablesComponent,
+    GraphIconComponent,
+    GraphIconComponent
   ],
   exports: [
   ],
@@ -31,7 +38,11 @@ import {MatIconModule} from "@angular/material/icon";
     MatDividerModule,
     FlexModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    MatTableModule,
+    MatButtonToggleModule,
+    HighchartsChartModule
   ]
 })
 export class DashboardModule { }

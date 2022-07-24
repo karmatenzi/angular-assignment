@@ -8,21 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class GraphsComponent implements OnInit {
 graphs=[
   {
-    graph: 'graphs',
     updates: 'Daily Sales',
     info:'55%',
     icon:'update',
     foot: 'update 4 minutes ago',
   },
   {
-    graph: 'graphs',
     updates: 'Daily Sales',
     info:'55%',
     icon:'update',
     foot: 'update 4 minutes ago',
   },
   {
-    graph: 'graphs',
     updates: 'Daily Sales',
     info:'55%',
     icon:'update',

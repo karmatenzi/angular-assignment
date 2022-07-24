@@ -1,8 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
-  <mat-card *ngFor="let graph of  graphs"  fxFlex="50"  >
+  <mat-card *ngFor="let graph of graphs" fxFlex="33.3">
     <mat-card-header>
       <div >
-        <mat-icon >{{graph.graph}}</mat-icon>
+        <mat-icon class="header" ><app-graph-icon></app-graph-icon></mat-icon>
       </div>
       <div>
         <span>{{graph.updates}}</span>

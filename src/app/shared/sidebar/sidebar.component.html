@@ -1,22 +1,20 @@
-<mat-nav-list>
-  <div class="profile-card">
-    <div class="header">
-      <h2>Karma Tenzin</h2>
-      <h4>tenzing@gmail.com</h4>
+<div class="sidebar">
+  <mat-nav-list>
+    <br>
+    <div fxLayout="row"  fxLayoutAlign="start center" fxLayoutGap="10px">
+      <img src="/../src/assets/images/angular-logo.png">
+      <p>CREATIVE TIM</p>
     </div>
-    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Profile Dog">
-  </div>
-  <mat-divider></mat-divider>
-  <h2 matSubheader>Pages</h2>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Article</a>
-  <mat-divider></mat-divider>
-  <h2 matSubheader>Tools</h2>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
-    <mat-icon>import_contacts</mat-icon> Contacts
-  </a>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
-    <mat-icon>contact_phone</mat-icon> Leads
-  </a>
-</mat-nav-list>
+    <br>
+    <mat-divider></mat-divider>
+    <br>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>dashboard</mat-icon> Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>person</mat-icon> User Profile</a>
+    <a mat-list-item routerLinkActive="list-item-active "  routerLink="/"><mat-icon>content_paste</mat-icon> Table List</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>library_books</mat-icon> Typography</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>bubble_charts</mat-icon>  Icons</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>location_on</mat-icon> Maps</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>notifications</mat-icon> Notifications</a>
+  </mat-nav-list>
+</div>
+

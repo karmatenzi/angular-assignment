@@ -1,9 +1,9 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
-  <mat-card *ngFor="let card  of  cards"  fxFlex="50"  >
+  <mat-card *ngFor="let card of cards"  fxFlex="50"  >
     <mat-card-header>
-      <div >
+      <mat-card class="header">
         <mat-icon >{{card.icon}}</mat-icon>
-      </div>
+      </mat-card>
       <div>
         <p>{{card.header}}</p>
         <span>{{card.char}}</span>
