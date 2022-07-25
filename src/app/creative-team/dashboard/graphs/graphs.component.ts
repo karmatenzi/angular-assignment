@@ -9,21 +9,24 @@ export class GraphsComponent implements OnInit {
 graphs=[
   {
     updates: 'Daily Sales',
-    info:'55%',
+    info:'55% increase in today sales.',
     icon:'update',
     foot: 'update 4 minutes ago',
+    bgColor: "#5CB460"
   },
   {
-    updates: 'Daily Sales',
-    info:'55%',
+    updates: 'Email Subscriptions',
+    info:'Last Campaign Performance',
     icon:'update',
-    foot: 'update 4 minutes ago',
+    foot: 'campaign sent 2 days ago',
+    bgColor: "#FEA11E"
   },
   {
-    updates: 'Daily Sales',
-    info:'55%',
+    updates: 'Completed Tasks',
+    info:'Last Campaign Performance',
     icon:'update',
-    foot: 'update 4 minutes ago',
+    foot: 'campaign sent 2 days ago',
+    bgColor: "#ED4D49"
   }
 ]
   constructor() { }

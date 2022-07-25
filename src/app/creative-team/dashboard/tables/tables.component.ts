@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {TooltipPosition} from '@angular/material/tooltip';
+
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -7,16 +10,10 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {position: 1, name: 'Sonam', weight: 100, symbol: 'Bhutan'},
+  {position: 2, name: 'Sangay', weight: 100, symbol: 'Korea'},
+  {position: 3, name: 'Lhatruel', weight: 100, symbol: 'Japan'},
+  {position: 4, name: 'Dhan', weight: 100, symbol: 'Singapore'},
 ];
 
 @Component({
@@ -25,8 +22,26 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent implements OnInit {
+  //tooltip position
+  positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
+  position = new FormControl(this.positionOptions[2]);
+  //graph
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  words=[
+    {
+      info:'Sign contract for "What are conference organizers afraid of?"',
+    },
+    {
+      info:'Lines From Great Russian Literature? Or E-mails From My Boss?',
+    },
+    {
+      info:'Flooded: One year later, assessing what was lost and what was found',
+    },
+    {
+      info:'Create 4 Invisible User Experiences you Never Knew About',
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {

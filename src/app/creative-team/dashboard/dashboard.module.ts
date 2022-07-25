@@ -16,6 +16,9 @@ import {MatTableModule} from "@angular/material/table";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import { GraphIconComponent } from './graphs/graph-icon/graph-icon.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatListModule} from "@angular/material/list";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 
 
@@ -30,19 +33,22 @@ import { HighchartsChartModule } from 'highcharts-angular';
   ],
   exports: [
   ],
-  imports: [
-    CommonModule,
-    MatSidenavModule,
-    AppRoutingModule,
-    SharedModule,
-    MatDividerModule,
-    FlexModule,
-    MatCardModule,
-    MatIconModule,
-    MatTabsModule,
-    MatTableModule,
-    MatButtonToggleModule,
-    HighchartsChartModule
-  ]
+    imports: [
+        CommonModule,
+        MatSidenavModule,
+        AppRoutingModule,
+        SharedModule,
+        MatDividerModule,
+        FlexModule,
+        MatCardModule,
+        MatIconModule,
+        MatTabsModule,
+        MatTableModule,
+        MatButtonToggleModule,
+        HighchartsChartModule,
+        MatCheckboxModule,
+        MatListModule,
+        MatTooltipModule
+    ]
 })
 export class DashboardModule { }
