@@ -12,6 +12,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatBadgeModule} from "@angular/material/badge";
 import {FlexModule} from "@angular/flex-layout";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 
 
@@ -37,6 +39,8 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
     MatBadgeModule,
     FlexModule,
     MatButtonToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
   ]
 })
 export class SharedModule { }

@@ -1,15 +1,17 @@
-<mat-toolbar >
+<mat-toolbar>
   <mat-toolbar-row>
-     <span color="#FEFEFE"> Dashboard</span>
-    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxLayoutGap="4px">
-      <div fxFlexfxLayout="row"  fxLayoutAlign="start center" fxLayoutGap="2px">
-          <input type="text" value="" placeholder="Search..." class="form-control" />
-        <button mat-icon-button  mat-raised-button>
-          <mat-icon>search</mat-icon>
+    <p> Dashboard</p>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end flex-end" fxLayoutGap="4px">
+      <div fxFlexfxLayout="row" fxLayoutAlign="start center" fxLayoutGap="2px">
+        <mat-form-field [ngStyle]="{color:'#A4A29E'}">
+          <input matInput placeholder="Search...">
+        </mat-form-field>
+        <button mat-icon-button mat-raised-button>
+          <mat-icon [ngStyle]="{color:'#A4A29E'}">search</mat-icon>
         </button>
       </div>
       <div>
-        <ul fxLayout="row" fxLayoutGap="24px">
+        <ul fxLayout="row" fxLayoutGap="24px" [ngStyle]="{color:'#A4A29E'}">
           <li>
             <button mat-icon-button>
               <mat-icon>dashboard</mat-icon>

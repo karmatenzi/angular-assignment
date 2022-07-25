@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {TooltipPosition} from '@angular/material/tooltip';
 
@@ -28,21 +28,31 @@ export class TablesComponent implements OnInit {
   //graph
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
-  words=[
+  words = [
     {
-      info:'Sign contract for "What are conference organizers afraid of?"',
+      info: 'Sign contract for "What are conference organizers afraid of?"',
+      edit:"#BC6EC9",
+      delete:"#ED4D49"
     },
     {
-      info:'Lines From Great Russian Literature? Or E-mails From My Boss?',
+      info: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
+      edit:"#BC6EC9",
+      delete:"#ED4D49"
     },
     {
-      info:'Flooded: One year later, assessing what was lost and what was found',
+      info: 'Flooded: One year later, assessing what was lost and what was found',
+      edit:"#BC6EC9",
+      delete:"#ED4D49"
     },
     {
-      info:'Create 4 Invisible User Experiences you Never Knew About',
+      info: 'Create 4 Invisible User Experiences you Never Knew About',
+      edit:"#BC6EC9",
+      delete:"#ED4D49"
     }
   ];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
