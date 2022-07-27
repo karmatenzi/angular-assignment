@@ -13,8 +13,8 @@ export class CardsComponent implements OnInit {
       char: '49/50  GB',
       foot: 'warning',
       text: 'Get More Space...',
-      textColor:"#BC6EC9",
-      iconColor:"#F44337",
+      textColor: "#BC6EC9",
+      iconColor: "#F44337",
       bgColor: "#FEA11E"
     },
     {
@@ -23,8 +23,8 @@ export class CardsComponent implements OnInit {
       char: '$34,245',
       foot: 'date_range',
       text: 'Last 24 Hours',
-      textColor:"#A4A29E",
-      iconColor:"#A4A29E",
+      textColor: "#A4A29E",
+      iconColor: "#A4A29E",
       bgColor: "#5CB460"
     },
     {
@@ -33,8 +33,8 @@ export class CardsComponent implements OnInit {
       char: '49/50  GB',
       foot: 'local_offer',
       text: 'Get More Space...',
-      textColor:"#A4A29E",
-      iconColor:"#A4A29E",
+      textColor: "#A4A29E",
+      iconColor: "#A4A29E",
       bgColor: "#ED4D49"
     },
     {
@@ -43,11 +43,12 @@ export class CardsComponent implements OnInit {
       char: '49/50  GB',
       foot: 'update',
       text: 'Get More Space...',
-      textColor:"#A4A29E",
-      iconColor:"#A4A29E",
+      textColor: "#A4A29E",
+      iconColor: "#A4A29E",
       bgColor: "#11B8CC"
     }
   ]
+
   constructor() {
   }
 

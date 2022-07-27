@@ -1,8 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
-  <mat-card *ngFor="let card of cards"  fxFlex="50"  >
-    <mat-card-header fxLayout="row" fxLayoutAlign="space-between center" class="card-header" >
-      <mat-card class="header"  [ngStyle]="{'background-color': card.bgColor}">
-        <mat-icon [ngStyle]="{'color': '#FFFFFF'}" class="icon">{{card.icon}}</mat-icon>
+  <mat-card fxFlex="50" *ngFor="let card of cards" class="card--shadow mt-28 mr-10 mb-20">
+    <mat-card-header fxLayout="row" fxLayoutAlign="space-between center" class="card">
+      <mat-card class="card__header" [ngStyle]="{'background-color': card.bgColor}">
+        <mat-icon [ngStyle]="{'color': '#FFFFFF'}" class="icon pt-14 pr-0 pb-2 pl-12">{{card.icon}}</mat-icon>
       </mat-card>
       <div>
         <p [ngStyle]="{'color': '#A4A29E'}">{{card.header}}</p>
@@ -11,8 +11,8 @@
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-footer>
-      <div fxLayout="row" fxLayoutAlign="start  flex-end" fxLayoutGap="10px" class="footer-blog">
-        <mat-icon  [ngStyle]="{'color': card.iconColor}">{{card.foot}}</mat-icon>
+      <div fxLayout="row" fxLayoutAlign="start  flex-end" fxLayoutGap="10px" class="footer-blog pt-10 px-12 pb-2">
+        <mat-icon [ngStyle]="{'color': card.iconColor}">{{card.foot}}</mat-icon>
         <p [ngStyle]="{'color': card.textColor}">{{card.text}}</p>
       </div>
     </mat-card-footer>

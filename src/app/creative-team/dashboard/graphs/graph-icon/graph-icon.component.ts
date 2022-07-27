@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as Highcharts from 'highcharts';
+
 @Component({
   selector: 'app-graph-icon',
   templateUrl: './graph-icon.component.html',
@@ -7,8 +8,10 @@ import * as Highcharts from 'highcharts';
 })
 export class GraphIconComponent implements OnInit {
   Highcharts = Highcharts;
-  chartOptions ={};
-  constructor() { }
+  chartOptions = {};
+
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.chartOptions = {

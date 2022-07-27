@@ -19,6 +19,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatListModule} from "@angular/material/list";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -48,7 +49,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
         HighchartsChartModule,
         MatCheckboxModule,
         MatListModule,
-        MatTooltipModule
+        MatTooltipModule,
+        MatButtonModule
     ]
 })
 export class DashboardModule { }

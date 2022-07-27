@@ -1,8 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
-  <mat-card *ngFor="let graph of graphs" fxFlex="31.3">
+  <mat-card fxFlex="34.3" *ngFor="let graph of graphs" class="card--shadow">
     <mat-card-header fxLayout="column" class="main-header">
       <div fxFlex="100">
-        <mat-icon class="header">
+        <mat-icon class="header br-6">
           <app-graph-icon></app-graph-icon>
         </mat-icon>
       </div>
@@ -12,8 +12,8 @@
       </div>
     </mat-card-header>
     <mat-divider></mat-divider>
-    <mat-card-footer class="footer">
-      <div fxLayout="row" class="footer-blog" fxLayoutGap="10px" [ngStyle]="{'color': '#A4A29E'}">
+    <mat-card-footer>
+      <div fxLayout="row" class="footer-blog pt-10 px-12" fxLayoutGap="10px" [ngStyle]="{'color': '#A4A29E'}">
         <mat-icon>{{graph.icon}}</mat-icon>
         <p>{{graph.foot}}</p>
       </div>

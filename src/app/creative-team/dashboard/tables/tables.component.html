@@ -1,9 +1,9 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
-  <mat-card fxFlex="50" class="main-card">
+  <mat-card fxFlex="50" class="card--shadow">
     <mat-card-header class="main-header">
       <mat-card fxFlex="100" class="header" fxLayout="row" fxLayoutAlign="start center"
                 [ngStyle]="{background:'#BC6EC9'}">
-        <mat-nav-list fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px"[ngStyle]="{color:'#FFFFFF'}">
+        <mat-nav-list fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" [ngStyle]="{color:'#FFFFFF'}">
           <span>Tasks:</span>
           <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#FFFFFF'}">
             <mat-icon>bug_report</mat-icon>
@@ -17,40 +17,43 @@
         </mat-nav-list>
       </mat-card>
     </mat-card-header>
-    <br>
-    <br>
-    <br>
     <!--    content-->
-    <mat-card-content class="main-content">
-      <div *ngFor="let word of words">
-        <div fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between center" class="table">
+    <mat-card-content class="main mt-40">
+      <div *ngFor="let word of words" class="main__content">
+        <div fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between center" class="main__table pr-2 pt-16 mt-14">
           <mat-checkbox class="example-margin">{{word.info}}</mat-checkbox>
           <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-            <mat-icon
-              matTooltip="Edit  Task"
-              [matTooltipPosition]="position.value!"
-              aria-label="Button that displays a tooltip when focused or hovered over" [ngStyle]="{'color':word.edit}">edit
-            </mat-icon>
-            <mat-icon
-              matTooltip="Remove"
-              [matTooltipPosition]="position.value!"
-              aria-label="Button that displays a tooltip when focused or hovered over" [ngStyle]="{color:word.delete}">close
-            </mat-icon>
+            <button mat-icon-button>
+              <mat-icon
+                matTooltip="Edit Task"
+                matTooltipPosition="above"
+                class="cursor--pointer"
+                [ngStyle]="{'color':word.edit}">
+                edit
+              </mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon
+                matTooltip="Remove"
+                matTooltipPosition="above"
+                class="cursor--pointer"
+                [ngStyle]="{color:word.delete}">close
+              </mat-icon>
+            </button>
           </div>
         </div>
         <mat-divider></mat-divider>
       </div>
     </mat-card-content>
   </mat-card>
-
   <!--  Next table-->
-  <mat-card fxFlex="50" class="main-card">
+  <mat-card fxFlex="50" class="card--shadow">
     <mat-card-header class="main-header">
       <mat-card fxFlex="100" class="header" [ngStyle]="{background:'#FD9B14'}">
-        <mat-card-content>
+        <div>
           <p [ngStyle]="{color:'#FFFFFF'}">Employees Stats</p>
           <p [ngStyle]="{color:'#e0ddd8'}">New employees on 15th September, 2016</p>
-        </mat-card-content>
+        </div>
       </mat-card>
     </mat-card-header>
     <br>

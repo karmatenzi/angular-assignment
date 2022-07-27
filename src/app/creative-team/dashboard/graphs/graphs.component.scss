@@ -1,10 +1,3 @@
-mat-card {
-  margin: 20px;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%), 0 4px 25px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
-}
-
 .main-header {
   position: relative;
   height: 250px;
@@ -15,13 +8,8 @@ mat-card {
 }
 
 .header {
-  border-radius: 5px;
   width: 100%;
   height: 100%;
   position: absolute;
   margin: -36px 0 0;
-}
-
-.footer-blog {
-  padding: 10px 12px 0;
 }

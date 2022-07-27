@@ -22,32 +22,29 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent implements OnInit {
-  //tooltip position
-  positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
-  position = new FormControl(this.positionOptions[2]);
   //graph
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   words = [
     {
       info: 'Sign contract for "What are conference organizers afraid of?"',
-      edit:"#BC6EC9",
-      delete:"#ED4D49"
+      edit: "#BC6EC9",
+      delete: "#ED4D49"
     },
     {
       info: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
-      edit:"#BC6EC9",
-      delete:"#ED4D49"
+      edit: "#BC6EC9",
+      delete: "#ED4D49"
     },
     {
       info: 'Flooded: One year later, assessing what was lost and what was found',
-      edit:"#BC6EC9",
-      delete:"#ED4D49"
+      edit: "#BC6EC9",
+      delete: "#ED4D49"
     },
     {
       info: 'Create 4 Invisible User Experiences you Never Knew About',
-      edit:"#BC6EC9",
-      delete:"#ED4D49"
+      edit: "#BC6EC9",
+      delete: "#ED4D49"
     }
   ];
 
