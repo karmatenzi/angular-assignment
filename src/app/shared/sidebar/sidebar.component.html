@@ -1,31 +1,32 @@
 <div class="sidebar">
   <mat-nav-list>
     <br>
-    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" class="side-header mb-20 ml-36">
-      <img src="../assets/images/angular-logo.png" alt="logo">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" class="sidebar__header mb-20 ml-36">
+      <img src="../assets/images/angular_logo.png" alt="logo">
       <span class="font-size-18">CREATIVE TIM</span>
     </div>
     <mat-divider></mat-divider>
-    <div class="side-content mt-20 font-size-18">
-      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+    <div class="sidebar__content card--color mt-20 font-size-18">
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" class="card--color">
         <mat-icon>dashboard</mat-icon>
-        Dashboard</a>
-      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+        Dashboard
+      </a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/user-profile" class="card--color">
         <mat-icon>person</mat-icon>
         User Profile</a>
-      <a mat-list-item routerLinkActive="list-item-active " routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+      <a mat-list-item routerLinkActive="list-item-active " routerLink="/table-list" class="card--color">
         <mat-icon>content_paste</mat-icon>
         Table List</a>
-      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" class="card--color">
         <mat-icon>library_books</mat-icon>
         Typography</a>
-      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" class="card--color">
         <mat-icon>bubble_charts</mat-icon>
         Icons</a>
-      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/map" class="card--color">
         <mat-icon>location_on</mat-icon>
         Maps</a>
-      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" [ngStyle]="{color:'#A4A29E'}">
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/" class="card--color">
         <mat-icon>notifications</mat-icon>
         Notifications</a>
     </div>

@@ -1,19 +1,19 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
-  <mat-card fxFlex="34.3" *ngFor="let graph of graphs" class="card--shadow">
-    <mat-card-header fxLayout="column" class="main-header">
+  <mat-card fxFlex="34.3" class="card--shadow" *ngFor="let graph of graphs">
+    <mat-card-header fxLayout="column" class="header">
       <div fxFlex="100">
-        <mat-icon class="header br-6">
+        <mat-icon class="header__icon br-6">
           <app-graph-icon></app-graph-icon>
         </mat-icon>
       </div>
-      <div class="caption">
+      <div class="header__caption">
         <span>{{graph.updates}}</span>
-        <p [ngStyle]="{'color': '#A4A29E'}">{{graph.info}}</p>
+        <p class="card--color">{{graph.info}}</p>
       </div>
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-footer>
-      <div fxLayout="row" class="footer-blog pt-10 px-12" fxLayoutGap="10px" [ngStyle]="{'color': '#A4A29E'}">
+      <div fxLayout="row" fxLayoutGap="10px" class="footer-blog card--color pt-10 px-12">
         <mat-icon>{{graph.icon}}</mat-icon>
         <p>{{graph.foot}}</p>
       </div>

@@ -1,0 +1,11 @@
+.table{
+  position: relative;
+  &__header{
+    position: absolute;
+    top: 25px;
+    width: 94%;
+  }
+  &__content{
+    width: 100%;
+  }
+}

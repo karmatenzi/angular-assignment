@@ -1,11 +1,11 @@
 <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
   <mat-card fxFlex="50" *ngFor="let card of cards" class="card--shadow mt-28 mr-10 mb-20">
     <mat-card-header fxLayout="row" fxLayoutAlign="space-between center" class="card">
-      <mat-card class="card__header" [ngStyle]="{'background-color': card.bgColor}">
-        <mat-icon [ngStyle]="{'color': '#FFFFFF'}" class="icon pt-14 pr-0 pb-2 pl-12">{{card.icon}}</mat-icon>
+      <mat-card class="card__icon-container" [ngStyle]="{'background-color': card.bgColor}">
+        <mat-icon class="bg--color pt-14 pr-0 pb-2 pl-12">{{card.icon}}</mat-icon>
       </mat-card>
       <div>
-        <p [ngStyle]="{'color': '#A4A29E'}">{{card.header}}</p>
+        <p class="card--color">{{card.header}}</p>
         <span>{{card.char}}</span>
       </div>
     </mat-card-header>
