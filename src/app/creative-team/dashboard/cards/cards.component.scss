@@ -1,0 +1,11 @@
+.card{
+  position: relative;
+  height: 68px;
+  &__icon-container {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 18px;
+  }
+}
+

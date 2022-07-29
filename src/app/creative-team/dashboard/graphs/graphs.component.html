@@ -1,0 +1,22 @@
+<div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+  <mat-card fxFlex="34.3" class="card--shadow mr-16" *ngFor="let graph of graphs">
+    <mat-card-header fxLayout="column" class="header">
+      <div fxFlex="100">
+        <mat-icon class="header__icon br-6">
+          <app-graph-icon></app-graph-icon>
+        </mat-icon>
+      </div>
+      <div class="header__caption">
+        <span>{{graph.updates}}</span>
+        <p class="color--gray">{{graph.info}}</p>
+      </div>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-footer>
+      <div fxLayout="row" fxLayoutGap="10px" class="footer-blog color--gray pt-10 px-12">
+        <mat-icon>{{graph.icon}}</mat-icon>
+        <p>{{graph.foot}}</p>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+</div>

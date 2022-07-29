@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/mixin.scss";
+@import "assets/styles/variables.scss";
+@import "assets/styles/utilities.scss";
+
+@include font-size($font-size);
+@include try-colors();
+@include margins($margins);
+@include padding($paddings);
+@include border-radius($border-radius);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.highcharts-background {
+  fill: aqua;
+}
