@@ -1,11 +1,5 @@
 @import "./variables";
 
-@mixin icon-style() {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-}
-
 //font-size
 @mixin font-size($font-size) {
   @each $size in $font-size {
@@ -22,7 +16,7 @@
     'gray-white': $gray-white,
     'blue-color': $blue-color,
     'red-color': $red-color,
-    'white-color': $white-color,
+    'white-color': $white,
     'green-color': $green-color,
     'yellow-color': $yellow,
     'gray-color': $gray,

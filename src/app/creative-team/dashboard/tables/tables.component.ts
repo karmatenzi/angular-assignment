@@ -47,6 +47,20 @@ export class TablesComponent implements OnInit {
       delete: "#ED4D49"
     }
   ];
+  navs =[
+    {
+      icon: 'bug_report',
+      text: 'BUGS'
+    },
+    {
+      icon: 'code',
+      text: 'WEBSITES'
+    },
+    {
+      icon: 'cloud',
+      text: 'SERVER'
+    },
+  ]
 
   constructor() {
   }
